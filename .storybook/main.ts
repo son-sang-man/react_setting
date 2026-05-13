@@ -10,6 +10,9 @@ const config: StorybookConfig = {
   stories: [
     '../apps/**/src/**/*.stories.@(ts|tsx|js|jsx)',
     '../packages/ui/**/*.stories.@(ts|tsx|js|jsx)',
+    '../packages/ui/**/*.mdx',
+
+    '../packages/styles/docs/**/*.mdx',
   ],
   addons: ['@storybook/addon-docs', '@storybook/addon-a11y'],
   viteFinal: async (config) => {
