@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["apps/project1/src/*"],
+      "@repo/*": ["packages/*/src"]
+    },
+    "strict": true
+  }
+}
