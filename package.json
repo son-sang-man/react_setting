@@ -1,10 +1,16 @@
 {
-  "name": "react_setting",
+  "name": "react-setting-monorepo",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "dev": "vite",
+    "dev:project1": "pnpm --filter project1 dev",
+    "build:project1": "pnpm --filter project1 build",
+    "preview:project1": "pnpm --filter project1 preview",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
