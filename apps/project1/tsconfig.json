@@ -13,7 +13,13 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "strict": true,
-    "ignoreDeprecations": "6.0"
+    "ignoreDeprecations": "6.0",
+
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@repo/*": ["../../packages/*"]
+    }
   },
 
   "include": ["src", "src/global.d.ts", ".storybook", "vite.config.ts", "vite-env.d.ts"]
