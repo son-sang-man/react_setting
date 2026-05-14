@@ -10,5 +10,5 @@ export interface ButtonProps {
 }
 
 export default function Button({ children, variant = 'primary' }: ButtonProps) {
-  return <button className={`btn btn-${variant}`}>{children}</button>;
+  return <button className={`btn test btn-${variant}`}>{children}</button>;
 }
