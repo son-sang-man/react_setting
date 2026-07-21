@@ -20,7 +20,8 @@ const config: StorybookConfig = {
 
     config.resolve.alias = {
       ...(config.resolve.alias || {}),
-      '@': path.resolve(__dirname, '../src'),
+      '@project1': path.resolve(__dirname, '../apps/project1/src'),
+      '@packages': path.resolve(__dirname, '../packages'),
     };
 
     return config;

@@ -1,82 +1,12 @@
 import { Meta } from '@storybook/addon-docs/blocks';
+import TokenTable from './TokenTable';
 
 <Meta title="Styles/Colors" />
 
 # Colors
 
-디자인 시스템 컬러 토큰입니다.
+디자인 시스템 Color Token입니다.
 
-## Neutral
+## Color
 
-<table>
-  <thead>
-    <tr>
-      <th>Token</th>
-      <th>Value</th>
-      <th>Preview</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td><code>--color-black</code></td>
-      <td><code>#000000</code></td>
-      <td>
-        <div
-          style={{
-            width: 40,
-            height: 20,
-            background: '#000',
-            borderRadius: 4,
-          }}
-        />
-      </td>
-    </tr>
-
-    <tr>
-      <td><code>--color-white</code></td>
-      <td><code>#ffffff</code></td>
-      <td>
-        <div
-          style={{
-            width: 40,
-            height: 20,
-            background: '#fff',
-            border: '1px solid #ddd',
-            borderRadius: 4,
-          }}
-        />
-      </td>
-    </tr>
-
-  </tbody>
-</table>
-
-## Brand
-
-<table>
-  <thead>
-    <tr>
-      <th>Token</th>
-      <th>Value</th>
-      <th>Preview</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td><code>--color</code></td>
-      <td><code>#231231</code></td>
-      <td>
-        <div
-          style={{
-            width: 40,
-            height: 20,
-            background: '#231231',
-            borderRadius: 4,
-          }}
-        />
-      </td>
-    </tr>
-  </tbody>
-</table>
+<TokenTable prefix="--color-" preview />
