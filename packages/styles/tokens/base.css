@@ -1,0 +1,9 @@
+:root {
+  /* Base Color */
+  --base-font-color: #111111;
+  --base-background-color: var(--color-white);
+  --base-font-family:
+    var(--font-Pretendard), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --base-font-weight: var(--font-weight-regular);
+  --base-font-size: var(--font-size-14);
+}
