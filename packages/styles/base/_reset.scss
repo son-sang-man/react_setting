@@ -16,7 +16,6 @@
 
 /* Root defaults */
 html {
-  font-size: var(--base-font-size);
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   scroll-behavior: smooth;
@@ -27,7 +26,15 @@ body {
   min-height: 100vh;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
-  font-family: var(--base-font);
+  font-family: var(--base-font-family);
+  background: {
+    color: var(--base-background-color);
+  }
+  color: var(--base-font-color);
+  font: {
+    weight: var(--base-font-weight);
+    size: var(--base-font-size);
+  }
 }
 
 /* Media defaults */
@@ -87,6 +94,21 @@ h6 {
 /* Prevent textarea resize */
 textarea {
   resize: vertical;
+}
+button {
+  border-radius: 0;
+}
+
+[type='button'],
+[type='reset'],
+[type='submit'],
+button {
+  -webkit-appearance: button;
+}
+
+button,
+select {
+  text-transform: none;
 }
 
 /* Remove animations for accessibility */
