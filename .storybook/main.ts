@@ -10,6 +10,9 @@ const config: StorybookConfig = {
   stories: [
     '../apps/**/src/**/*.stories.@(ts|tsx|js|jsx)',
     '../packages/ui/**/*.stories.@(ts|tsx|js|jsx)',
+    '../packages/ui/**/*.mdx',
+
+    '../packages/styles/docs/**/*.mdx',
   ],
   addons: ['@storybook/addon-docs', '@storybook/addon-a11y'],
   viteFinal: async (config) => {
@@ -17,7 +20,8 @@ const config: StorybookConfig = {
 
     config.resolve.alias = {
       ...(config.resolve.alias || {}),
-      '@': path.resolve(__dirname, '../src'),
+      '@project1': path.resolve(__dirname, '../apps/project1/src'),
+      '@packages': path.resolve(__dirname, '../packages'),
     };
 
     return config;
